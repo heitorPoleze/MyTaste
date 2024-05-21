@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Axis', sans-serif;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black1: #000000;
+    --color-black2: #2c2c2c;
+    --color-red1: #7a0000;
+    --color-red2: #ff4040;
+    --color-green1: #627254;
+}
+
+body {
+    background-color: var(--color-black2);
+}
+
+.header {
+    background-color: var(--color-black2);
+    box-shadow: 1px 1px 4px 1px var(--color-black1);
+    padding: 50px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px;
+
+    
+}
+
+.boxImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 7px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.boxA {
+    display: flex;
+    gap: 50px;
+}
+
+.link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.7s;
+}
+
+.link:hover {
+    color: var(--color-green1);
+}
+
+.login {
+    color: var(--color-white);
+}

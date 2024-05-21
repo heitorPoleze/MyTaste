@@ -1,0 +1,164 @@
+
+@media (min-width: 1140px) {
+    .square {
+width: 10vw !important;
+height: 10vw !important;
+}
+
+}
+:root {
+    --color-white: #ffffff;
+    --color-black1: #000000;
+    --color-black2: #2c2c2c;
+    --color-red1: #7a0000;
+    --color-red2: #ff4040;
+    --color-green1: #627254;
+    --color-green2:#33392A;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+h1{
+    font-family: "Workbench", sans-serif;
+    padding: 15px;
+    color: var(--color-white);
+
+}
+
+.wrap {
+overflow: hidden;
+display: flex;
+flex-direction: column;
+
+}
+.header {
+    background-color: var(--color-black2);
+    border-bottom: 1px solid var(--color-black1);   
+    padding: 5px 50px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar {
+padding-top: 5px;
+background-color: var(--color-black2);
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+flex-grow: 1;
+height: 100vh;
+
+}
+
+.sidebar h1{
+    font-size: 25px;
+    
+}
+
+
+.content {
+display: flex;
+flex-direction: column;
+background-color:#33392A;
+flex-grow: 2;
+height: 100vh;
+
+}
+
+.squareContainer {
+padding-top: 10px;
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px 1px;
+height: 100vh;
+width: 100%;
+}
+.square {
+border-radius: 20%;
+background: #aa9d7c;
+width: 10vw;
+height: 10vw;
+justify-self: center;
+align-self: center;
+transition: 1s;
+}
+.square:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 50px 5px #1c934f inset, 5px 5px 50px 5px #2e8353;
+    
+}
+
+.milMundos:hover{
+    box-shadow: 5px 5px 50px 5px #032a74 inset, 5px 5px 50px 5px #032a74;
+}
+
+.historiasFrustradas:hover{
+    box-shadow: 5px 5px 50px 5px #b63f76aa inset, 5px 5px 50px 5px #b63f76aa;
+}
+
+.heitorwave:hover{
+    box-shadow: 5px 5px 50px 5px #1c934f inset, 5px 5px 50px 5px #0c2917;
+}
+
+.eQuente:hover{
+    box-shadow: 5px 5px 50px 5px #06150c inset, 5px 5px 50px 5px #2e8353;
+}
+
+.moicano:hover{
+    box-shadow: 5px 5px 50px 5px #06150c inset, 5px 5px 50px 5px #2e8353;
+}
+
+.square img{ 
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.topBlock {
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+a{
+    font-family: "Workbench", sans-serif;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.7s;
+}
+a:hover{
+color: var(--color-green1);
+}
+.box-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 7px;
+}
+.logo {
+    width: 80px;
+}
+
+.box-a {
+    display: flex;
+    gap: 50px;
+
+}
