@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
+import github from "../img/github.png";
+import instagram from "../img/instagram.png";
+import linkedin from "../img/linkedin.webp";
 
 function Footer (){
     return(
@@ -30,9 +33,9 @@ function Footer (){
                         <h1 className={styles.titulos}>Nos siga nas redes  socias</h1>
                         <div className={styles.socialmedia}>
                         <ul>
-                            <li><Link to="https://www.instagram.com/heitor.poleze/" target="_blanck">Instagram</Link></li>
-                            <li><Link to="https://www.linkedin.com/in/heitor-poleze-coelho-dias-8ab2762b3/" target="_blanck">Linkedin</Link></li>
-                            <li><Link to="https://github.com/heitorPoleze" target="_blanck">Github</Link></li>
+                            <li><Link to="https://www.instagram.com/heitor.poleze/" target="_blanck"><img src={instagram} className={styles.imgsocialmedia} alt="instagram"/></Link></li>
+                            <li><Link to="https://www.linkedin.com/in/heitor-poleze-coelho-dias-8ab2762b3/" target="_blanck"><img src={linkedin} className={styles.imgsocialmedia} alt="linkedin"/></Link></li>
+                            <li><Link to="https://github.com/heitorPoleze" target="_blanck"><img src={github} className={styles.imgsocialmedia} alt=""/></Link></li>
                         </ul>
                         </div>
                     </div>

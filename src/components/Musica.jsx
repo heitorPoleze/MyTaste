@@ -26,7 +26,7 @@ function Musica(){
                 </div>
 
               <div className={styles.squareContainer}>
-                <div className={styles.square.heitorwave}> 
+                <div className={styles.square} id={styles.heitorwave}> 
                 <a href="https://open.spotify.com/playlist/4qxUhMra6HyHcKGsr7VhsE?si=e04c78f06d10477f"
                 target="_blank">
                     <img src={Heitorwave} alt="HeitorWave"/>
@@ -57,7 +57,7 @@ function Musica(){
                             </a>
                             </div>
 
-                <div className="square historiasFrustradas">
+                <div className={styles.square}id={styles.HistoriasFrustradas}>
                     <a href="https://open.spotify.com/playlist/0BfDQ8LJHJZOAlxkN4rahp?si=dd5f1c1e051443b0">
                         <img src={HistoriasFrustradas} alt="Histórias Frustradas"/>
                         </a>
@@ -69,19 +69,19 @@ function Musica(){
                             </a>
                             </div>
 
-                <div className="square milMundos">
+                <div className={styles.square} id={styles.MilMundosAzuis}>
                     <a href="https://open.spotify.com/playlist/5WmF4DmHm2wSUfCN2jxEXV?si=9d893b7dbffa45e4">
                         <img src={MilMundosAzuis} alt="Mil Mundos Azuis"/>
                             </a>
                             </div>
 
-                <div className="square eQuente">
+                <div className={styles.square} id={styles.EQuente}>
                     <a href="https://open.spotify.com/playlist/2kRMsbqt5ODx7YGm2vHmNc?si=5c20491b5df849c8">
                         <img src={EQuente} alt="É Quente"/>
                             </a>
                             </div>
 
-                <div className="square moicano">
+                <div className={styles.square} id={styles.Moicano}>
                     <a href="https://open.spotify.com/playlist/6E4OSQ4KrnIncuyTPx0KLg?si=3ed534a7963346d3">
                         <img src={Moicano} alt=""/>
                         </a>

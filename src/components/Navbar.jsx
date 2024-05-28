@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 function Navbar(){
     return (
         <>
+        <div className={styles.navbar}>
             <div className= {styles.header}>
              <div className={styles.boxImg}>
             <img src={logo}alt={"ícone de Login"} className={styles.logo}/>
@@ -24,6 +25,7 @@ function Navbar(){
         <a href="#">
             <img src={iconeLogin} className="imgLogin" alt="login" />
         </a>
+        </div>
         </div>
         </div>
         </>
