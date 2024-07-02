@@ -1,15 +1,17 @@
+// ROTAS
+
 import React from "react";
 import ReactDOM from "react-dom/client"
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import PaginaInicial from "./components/PaginaInicial";
-import Musica from "./components/Musica";
-import ErrorPage from "./components/ErrorPage";
-import Filmes from "./components/Filmes";
-import Artes from "./components/Artes";
-import Livros from "./components/Livros";
-import Jogos from "./components/Jogos";
+import PaginaInicial from "./components/jsx/PaginaInicial";
+import Musica from "./components/jsx/Musica";
+import ErrorPage from "./components/jsx/ErrorPage";
+import Filmes from "./components/jsx/Filmes";
+import Artes from "./components/jsx/Artes";
+import Livros from "./components/jsx/Livros";
+import Jogos from "./components/jsx/Jogos";
 
 
 const router = createBrowserRouter([

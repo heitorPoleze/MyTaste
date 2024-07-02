@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "../css/Footer.module.css";
 import { Link } from "react-router-dom";
 import github from "../img/github.png";
 import instagram from "../img/instagram.png";
@@ -8,10 +8,10 @@ import linkedin from "../img/linkedin.webp";
 function Footer (){
     return(
         <>
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.linha}>
-                    <div className={styles.footer}>
+                    <div className={styles.content}>
                         <h1 className={styles.titulos}>Sobre o site</h1>
                         <ul>
                             <li><Link to="/" className={styles.fonte}>Sobre nós</Link></li>
@@ -20,7 +20,7 @@ function Footer (){
                             <li><Link to="/" className={styles.fonte}>Política de privacidade</Link></li>
                         </ul>
                     </div>
-                    <div className={styles.footer}>
+                    <div className={styles.content}>
                         <h1 className={styles.titulos}>Suporte</h1>
                         <ul>
                             <li><Link to="/" className={styles.fonte}>FAQ</Link></li>
@@ -29,7 +29,7 @@ function Footer (){
                             <li><Link to="/" className={styles.fonte}>Acessibilidade</Link></li>
                         </ul>
                     </div>
-                    <div className={styles.footer}>
+                    <div className={styles.content}>
                         <h1 className={styles.titulos}>Nos siga nas redes  socias</h1>
                         <div className={styles.socialmedia}>
                         <ul>
@@ -41,7 +41,7 @@ function Footer (){
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
         </>
     );
 }

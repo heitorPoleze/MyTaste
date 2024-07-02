@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Livros.module.css";
+import styles from "../css/Livros.module.css";
 function Livros(){
     return(
         <>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Artes.module.css";
+import styles from "../css/Artes.module.css";
 
 function Artes(){
     return(

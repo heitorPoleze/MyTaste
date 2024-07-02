@@ -1,8 +1,8 @@
-import styles from './Navbar.module.css'
-import React from 'react'
-import logo from '../img/logo.png'
-import iconeLogin from '../img/person-circle.svg'
-import { Link } from 'react-router-dom'
+import styles from '../css/Navbar.module.css';
+import React from 'react';
+import logo from '../img/logo.png';
+import iconeLogin from '../img/person-circle.svg';
+import { Link } from 'react-router-dom';
 
 
 function Navbar(){

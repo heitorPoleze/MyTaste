@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./PaginaInicial.module.css";
+import styles from "../css/PaginaInicial.module.css";
 
 function PaginaInicial(){
     return(
