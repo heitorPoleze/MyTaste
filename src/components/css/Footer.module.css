@@ -6,6 +6,7 @@
     box-shadow: 
     inset 0px 11px 8px -10px var(--color-black1),
     inset 0px -11px 8px -10px var(--color-black2);
+    background-color: var(--color-black2);
 }
 .titulos{
     font-size: 20px;

@@ -5,9 +5,7 @@ import EsqueletoPreferencias from "./EsqueletoPreferencias";
 function Musica(){
     return(
             <>
-
-            <EsqueletoPreferencias
-            />
+            <EsqueletoPreferencias/>
 
                 </>
     );

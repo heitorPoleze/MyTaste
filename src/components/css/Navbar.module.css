@@ -19,21 +19,22 @@ body {
 
 .navbar{
     width: 100vw;
-    height: 100px;
+    height: 80px;
 }
 
 .header {
+
     width: 100%;
     position: fixed;
     background-color: var(--color-black2);
     box-shadow: 1px 1px 4px 1px var(--color-black1);
-    padding: 50px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    height: 100px;
 
     
 }
