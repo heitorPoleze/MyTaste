@@ -1,19 +1,51 @@
 import React from "react";
 import styles from "../css/EsqueletoPreferencias.module.css";
-import { useState } from 'react';
+import "../css/styles.css";
+import { useState, useRef} from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 
+let vetorQuadrado = [];
+let cont = 0;
+function EsqueletoPreferencias({nomeDaPagina}) {
+      const squareContainer = useRef(null);
+      const [divQuadrado, setdivQuadrado] = useState([]);
 
-function EsqueletoPreferencias() {
-  /*
-    const darNomeAPagina = (nomeDaPagina) => {
-      var h1TopBlock = document.getElem("h1TopBlock");
-      h1TopBlock.textContent = nomeDaPagina;
-    }*/
       const [show, setShow] = useState(false);
 
       const handleClose = () => setShow(false);
       const handleShow = () => setShow(true);
+
+      const [inLink, setLink] = useState("");
+      const [inImg, setImg] = useState("");
+
+const addObjeto = () => {
+  if(inLink == "" || inImg == ""){
+    outMsg.innerHTML = "Preencha todos os dados";
+  }else{
+    cont++;
+    setLink("");
+    setImg("");
+    class Quadrado{
+      constructor(link, img){
+        this.link = link;
+        this.img = img;
+      }
+    }
+    let newQuadrado = new Quadrado (inLink, inImg);
+    vetorQuadrado.push(newQuadrado);
+    for(let i = 0; i <  vetorQuadrado.length; i++){
+      if(squareContainer.current){
+        setdivQuadrado([...divQuadrado,<Link className={styles.squareLink} to={"https://" + inLink}target="_blank" rel="noopener noreferrer"><div className="square" key={cont}> </div> </Link>]);
+
+      };
+      console.log(vetorQuadrado[i]);
+    }
+
+  
+  }
+}
+
 
       
   return (
@@ -21,12 +53,22 @@ function EsqueletoPreferencias() {
     
       <Offcanvas show={show} onHide={handleClose}className = {styles.blabla}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title><p>Nova Música:</p></Offcanvas.Title>
+          <Offcanvas.Title><p>Nova {nomeDaPagina}:</p></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <p>Link da Música: <input type="text" id="inLinkDaMusica" placeholder="ex: youtube.com/blabla"/></p>
-          <p>Insira uma Imagem: <input type="text" id="inImg" placeholder="como q eu vou fazer isso"/> </p>
-          <button type="submit" id="btSalvar">Salvar</button>
+          <p>Digite Link de{nomeDaPagina}:
+            <input type="text" 
+            value={inLink} 
+            placeholder="ex: youtube.com/blabla"
+            onChange={(e) => setLink(e.target.value)}
+            /></p>
+          <p>Insira uma Imagem: <input
+           type="text" 
+          value={inImg}
+           placeholder="como q eu vou fazer isso"
+           onChange={(e) => setImg(e.target.value)}
+           /> </p>
+          <button type="submit" onClick={() => {addObjeto(); handleClose();}}>Salvar</button>
           <p id="outMsg"></p>
         </Offcanvas.Body>
       </Offcanvas>
@@ -35,36 +77,22 @@ function EsqueletoPreferencias() {
       <div className={styles.content}>
 
           <div className={styles.topBlock}>
-            <h1 id="h1TopBlock"></h1>
+            <h1>{nomeDaPagina}</h1>
           </div>
 
-        <div className={styles.squareContainer}>
+        <div className={styles.squareContainer} ref={squareContainer}>
+          {divQuadrado}
+          <div className="square add" onClick={handleShow}>+</div>
+          
 
-          <div className={styles.square} onClick={handleShow}></div>
-          <div className={styles.square}></div>
-          <div className={styles.square}></div>
-          <div className={styles.square}></div>
-          <div className={styles.square}></div>
-          <div className={styles.square}></div>
-          <div className={styles.square}></div>
         </div>
       </div>
     </div>
 
     </>
   );
+  
 };
 
 export default EsqueletoPreferencias;
 
-const inLinkDaMusica = document.getElementById("inLinkDaMusica");
-const inImg = document.getElementById("inImg");
-const btSalvar = document.getElementById("btSalvar");
-const outMsg = document.getElementById("outMsg");
-
-btSalvar.addEventListener("click", function(){
-  if(inLinkDaMusica.value == "" || inImg.value == ""){
-    outMsg.textContent = "Preencha todos os campos"
-  }
-}
-)

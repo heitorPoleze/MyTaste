@@ -1,0 +1,49 @@
+:root {
+    --color-white: #ffffff;
+    --color-black1: #000000;
+    --color-black2: #2c2c2c;
+    --color-red1: #7a0000;
+    --color-red2: #ff4040;
+    --color-green1: #627254;
+    --color-green2:#33392A;
+}
+
+.square {
+    border-radius: 20%;
+    background: #aa9d7c;
+    width: 10vw;
+    height: 10vw;
+    justify-self: center;
+    align-self: center;
+    transition: 1s;
+    }
+    .square:hover{
+        transform: scale(1.1);
+        box-shadow: 5px 5px 50px 5px #1c934f inset, 5px 5px 50px 5px #2e8353;
+        
+    }
+    
+    .square img{ 
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20%;
+    }
+    a{
+        font-family: "Workbench", sans-serif;
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 22px;
+        transition: 0.7s;
+    }
+    a:hover{
+    color: var(--color-green1);
+    }
+    
+    .add{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        color: var(--color-green2);
+    }

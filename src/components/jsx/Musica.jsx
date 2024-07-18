@@ -3,11 +3,11 @@ import styles from '../css/Musica.module.css';
 import EsqueletoPreferencias from "./EsqueletoPreferencias";
  
 function Musica(){
+
     return(
             <>
-            <EsqueletoPreferencias/>
-
-                </>
+            <EsqueletoPreferencias nomeDaPagina= "Música"/>
+            </>
     );
 }
 export default Musica;

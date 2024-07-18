@@ -1,12 +1,4 @@
-:root {
-    --color-white: #ffffff;
-    --color-black1: #000000;
-    --color-black2: #2c2c2c;
-    --color-red1: #7a0000;
-    --color-red2: #ff4040;
-    --color-green1: #627254;
-    --color-green2:#33392A;
-}
+
 
 * {
 box-sizing: border-box;
@@ -77,7 +69,7 @@ height: 100%;
 width: 100%;
 justify-content: center;
 }
-.square {
+/* .square {
 border-radius: 20%;
 background: #aa9d7c;
 width: 10vw;
@@ -98,7 +90,7 @@ transition: 1s;
     padding: 10px;
     border-radius: 20%;
 }
-
+*/
 .topBlock {
 
 display: flex;
@@ -110,14 +102,4 @@ justify-content: center;
 }
 .blabla input{
     border-radius: 50px;
-}
-a{
-    font-family: "Workbench", sans-serif;
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 22px;
-    transition: 0.7s;
-}
-a:hover{
-color: var(--color-green1);
 }

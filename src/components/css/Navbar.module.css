@@ -4,14 +4,6 @@
     font-family: 'Axis', sans-serif;
 }
 
-:root {
-    --color-white: #ffffff;
-    --color-black1: #000000;
-    --color-black2: #2c2c2c;
-    --color-red1: #7a0000;
-    --color-red2: #ff4040;
-    --color-green1: #627254;
-}
 
 body {
     background-color: var(--color-black2);

@@ -5,7 +5,7 @@ import EsqueletoPreferencias from "./EsqueletoPreferencias";
 function Filmes(){
     return(
         <>
-        <EsqueletoPreferencias/>
+        <EsqueletoPreferencias nomeDaPagina="Filmes"/>
         </>
     );
 }
