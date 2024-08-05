@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "../css/Livros.module.css";
+import EsqueletoPreferencias from "./EsqueletoPreferencias";
 function Livros(){
     return(
         <>
-        <h1 className={styles.titulo}>Livros</h1>
+        <EsqueletoPreferencias nomeDaPagina="Livros" />
         </>
     );
 }

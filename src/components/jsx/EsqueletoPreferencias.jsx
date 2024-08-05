@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 let vetorQuadrado = [];
 let cont = 0;
+
 function EsqueletoPreferencias({nomeDaPagina}) {
       const squareContainer = useRef(null);
       const [divQuadrado, setdivQuadrado] = useState([]);
@@ -17,12 +18,18 @@ function EsqueletoPreferencias({nomeDaPagina}) {
       const handleShow = () => setShow(true);
 
       const [inLink, setLink] = useState("");
-      const [inImg, setImg] = useState("");
+      const [inImg, setImg] = useState(null);
+      const handleImgChange = (e) => {
+        if (e.target.files){
+          setImg(URL.createObjectURL(e.target.files[0]));
+        }
+      };
 
 const addObjeto = () => {
   if(inLink == "" || inImg == ""){
     outMsg.innerHTML = "Preencha todos os dados";
   }else{
+    outMsg.innerHTML = nomeDaPagina + " foi salvo!"
     cont++;
     setLink("");
     setImg("");
@@ -36,7 +43,7 @@ const addObjeto = () => {
     vetorQuadrado.push(newQuadrado);
     for(let i = 0; i <  vetorQuadrado.length; i++){
       if(squareContainer.current){
-        setdivQuadrado([...divQuadrado,<Link className={styles.squareLink} to={"https://" + inLink}target="_blank" rel="noopener noreferrer"><div className="square" key={cont}> </div> </Link>]);
+        setdivQuadrado([...divQuadrado,<Link className={styles.squareLink} to={ inLink}target="_blank" rel="noopener noreferrer"><div className="square" key={cont}> <img src={inImg} /> </div> </Link>]);
 
       };
       console.log(vetorQuadrado[i]);
@@ -45,7 +52,6 @@ const addObjeto = () => {
   
   }
 }
-
 
       
   return (
@@ -56,19 +62,15 @@ const addObjeto = () => {
           <Offcanvas.Title><p>Nova {nomeDaPagina}:</p></Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <p>Digite Link de{nomeDaPagina}:
-            <input type="text" 
+          <p>Digite um Link de {nomeDaPagina}:
+            <input type="text"
             value={inLink} 
-            placeholder="ex: youtube.com/blabla"
+            placeholder="ex: https://youtube.com/blabla" className={styles.inputlink}
             onChange={(e) => setLink(e.target.value)}
             /></p>
-          <p>Insira uma Imagem: <input
-           type="text" 
-          value={inImg}
-           placeholder="como q eu vou fazer isso"
-           onChange={(e) => setImg(e.target.value)}
-           /> </p>
-          <button type="submit" onClick={() => {addObjeto(); handleClose();}}>Salvar</button>
+          <p>Insira uma Imagem:</p>
+          <input type="file" accept="image/*" className={styles.inputimg} onChange={handleImgChange} />
+          <button type="submit" className={styles.botao} onClick={() => {addObjeto();}}>Salvar</button>
           <p id="outMsg"></p>
         </Offcanvas.Body>
       </Offcanvas>
@@ -95,4 +97,5 @@ const addObjeto = () => {
 };
 
 export default EsqueletoPreferencias;
+
 

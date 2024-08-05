@@ -11,6 +11,8 @@
 .titulos{
     font-size: 20px;
     color: var(--color-green1);
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -35,4 +37,15 @@
 .imgsocialmedia {
     width: 30px;
     height: 30px;
+    padding: 3px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+}
+li{
+    display: flex;
+    justify-content: center;
 }
