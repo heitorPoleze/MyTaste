@@ -1,7 +1,7 @@
 import "./App.css";
-import DetalhesQuadrado from "./components/js/DetalhesQuadrado.js";
-import ContainerQuadrado from "./components/js/ContainerQuadrado.js";
-import Header from "./components/js/Header.js";
+import ContainerQuadrado from "./components/ContainerQuadrado/ContainerQuadrado.js";
+import DetalhesQuadrado from "./components/DetalhesQuadrado/DetalhesQuadrado.js";
+import Header from "./components/Header/Header.js";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import styles from "../css/Header.module.css";
-import Botao from "./Botao.js";
+import styles from "./Header.module.css";
+import Botao from "../Botao/Botao.js";
 import { VscAccount } from "react-icons/vsc";
 function Header() {
 

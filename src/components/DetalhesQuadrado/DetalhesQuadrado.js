@@ -1,4 +1,4 @@
-import styles from "../css/DetalhesQuadrado.module.css";
+import styles from "./DetalhesQuadrado.module.css";
 import dados from "../dados.json";
 const quadrado = dados.filter(
   (dado) => dado.id === window.location.pathname.slice(1)

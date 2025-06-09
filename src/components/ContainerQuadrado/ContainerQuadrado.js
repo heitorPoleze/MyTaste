@@ -1,5 +1,5 @@
-import Quadrado from "./Quadrado.js";
-import styles from "../css/ContainerQuadrado.module.css";
+import Quadrado from "../Quadrado/Quadrado.js";
+import styles from "./ContainerQuadrado.module.css";
 import dados from "../dados.json";
 
 

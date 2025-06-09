@@ -1,4 +1,4 @@
-import styles from "../css/PreencheQuadrado.module.css";
+import styles from "./PreencheQuadrado.module.css";
 function PreencheQuadrado() {
     return (
      <div className={styles["form-container"]}>

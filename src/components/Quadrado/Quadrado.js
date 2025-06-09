@@ -1,4 +1,4 @@
-import styles from "../css/Quadrado.module.css";
+import styles from "./Quadrado.module.css";
 
 function Quadrado(props){
     console.log(props);
