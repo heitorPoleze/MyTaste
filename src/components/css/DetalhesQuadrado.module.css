@@ -1,0 +1,58 @@
+.detalhes{
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.detalhes img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.detalhes a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.detalhes a:hover{
+    background-color: #0056b3;
+}
+.espaco {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.esquerda img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.direita p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.direita a {
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
+}
+

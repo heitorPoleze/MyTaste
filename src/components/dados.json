@@ -1,0 +1,62 @@
+[
+  {
+    "id": "img1",
+    "linkImg": "https://picsum.photos/seed/tech/150",
+    "descricao": "Imagem de exemplo sobre tecnologia e inovação.",
+    "linkDestino": "https://www.tecmundo.com.br"
+  },
+  {
+    "id": "img2",
+    "linkImg": "https://picsum.photos/seed/nature/150",
+    "descricao": "Foto inspiradora de natureza exuberante ao entardecer.",
+    "linkDestino": "https://www.nationalgeographic.com"
+  },
+  {
+    "id": "img3",
+    "linkImg": "https://picsum.photos/seed/education/150",
+    "descricao": "Banner promocional de cursos online gratuitos.",
+    "linkDestino": "https://www.coursera.org"
+  },
+  {
+    "id": "img4",
+    "linkImg": "https://picsum.photos/seed/sustainability/150",
+    "descricao": "Infográfico sobre economia circular e sustentabilidade.",
+    "linkDestino": "https://www.sebrae.com.br"
+  },
+  {
+    "id": "img5",
+    "linkImg": "https://picsum.photos/seed/art/150",
+    "descricao": "Arte digital colorida feita por artista independente.",
+    "linkDestino": "https://www.behance.net"
+  },
+  {
+    "id": "img6",
+    "linkImg": "https://picsum.photos/seed/ai/150",
+    "descricao": "Capa de livro sobre inteligência artificial aplicada.",
+    "linkDestino": "https://www.amazon.com"
+  },
+  {
+    "id": "img7",
+    "linkImg": "https://picsum.photos/seed/react/150",
+    "descricao": "Miniatura de vídeo tutorial de programação em React.",
+    "linkDestino": "https://www.youtube.com"
+  },
+  {
+    "id": "img8",
+    "linkImg": "https://picsum.photos/seed/university/150",
+    "descricao": "Imagem institucional de universidade renomada.",
+    "linkDestino": "https://www.mit.edu"
+  },
+  {
+    "id": "img9",
+    "linkImg": "https://picsum.photos/seed/finance/150",
+    "descricao": "Gráfico de desempenho de ações da bolsa de valores.",
+    "linkDestino": "https://www.b3.com.br"
+  },
+  {
+    "id": "img10",
+    "linkImg": "https://picsum.photos/seed/security/150",
+    "descricao": "Ilustração vetorial sobre segurança na internet.",
+    "linkDestino": "https://www.kaspersky.com"
+  }
+]

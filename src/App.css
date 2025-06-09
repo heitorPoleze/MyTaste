@@ -1,0 +1,22 @@
+:root {
+    --color-white: #ffffff;
+    --color-black1: #000000;
+    --color-black2: #2c2c2c;
+    --color-red1: #7a0000;
+    --color-red2: #ff4040;
+    --color-green1: #627254;
+    --color-green2:#33392A;
+    --color-bege: #aa9d7c;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+}
+
+footer{
+  margin-top: 2vh;
+  width: 100%;
+}
