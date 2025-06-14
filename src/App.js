@@ -1,19 +1,22 @@
 import "./App.css";
-import ContainerQuadrado from "./components/ContainerQuadrado/ContainerQuadrado.js";
-import DetalhesQuadrado from "./components/DetalhesQuadrado/DetalhesQuadrado.js";
-import Header from "./components/Header/Header.js";
+import About from "./routes/About.js";
+import HomePage from "./routes/HomePage.js";
 
 function App() {
-  return (
-    <>
-      {console.log(window.location)}
+//FAZER ROUTES
+  let page = window.location.pathname;
+  switch (page) {
+    case "/":
+      page = <HomePage />;
+      break;
+    case "/about":
+      page = <About />;
+      break;
+    default:
+      page = <HomePage />;
+  }
 
-      <DetalhesQuadrado />
-      <Header />
-      <ContainerQuadrado />
-      <footer> adadda</footer>
-    </>
-  );
+  return page;
 }
 
 export default App;
