@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import Botao from "../Botao/Botao.js";
 import { VscAccount } from "react-icons/vsc";
+import logo from "../../img/logo.png"
 function Header() {
 
   const numeroRandomico = Math.random();
@@ -16,8 +17,8 @@ function Header() {
   return (
     <header className={styles["header"]}>
       <div className={styles["container"]}>
-        <div className={styles["navleft"]}>
-          <img src="#" alt="logo" className={styles["logo"]} />
+        <div className={styles["navleft"]}>  
+        <Botao goto="/" descricao={<img src={logo} alt="logo" className={styles["logo"]}/>}/>
         </div>
 
 
