@@ -4,7 +4,6 @@ import dados from "../dados.json";
 
 
 function ContainerQuadrado(){
-  console.log(dados);
     return (
         <div className={styles["containerQuadrado"]}>
             {

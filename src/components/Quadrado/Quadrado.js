@@ -1,10 +1,9 @@
 import styles from "./Quadrado.module.css";
 
 function Quadrado(props){
-    console.log(props);
     return(
         <div className={styles["quadrado"]} id={props.key}>
-            <a href={`/${props.id}`}>
+            <a href={`/home/${props.id}`}>
             <img src={props.linkImg} alt={props.descricao}/>
             </a>
             <hr/>
