@@ -10,9 +10,9 @@ function Footer() {
                 <p>Todos os direitos reservados</p>
             </div>
             <div className={styles["center"]}>
-               <a href="https://www.linkedin.com/in/heitor-poleze-coelho-dias-8ab2762b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-               <a href="https://github.com/heitorPoleze" target="_blank" rel="noopener noreferrer">GitHub</a>
-               <a href="https://www.instagram.com/heitor.poleze/" target="_blank" rel="noopener noreferrer">Instagram</a>
+               <a href="https://www.linkedin.com/in/heitor-poleze-coelho-dias-8ab2762b3/" target="_blank" rel="noopener noreferrer"><p>LinkedIn</p></a>
+               <a href="https://github.com/heitorPoleze" target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+               <a href="https://www.instagram.com/heitor.poleze/" target="_blank" rel="noopener noreferrer"><p>LinkedIn</p></a>
                
                 
             </div>

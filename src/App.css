@@ -8,12 +8,14 @@
     --color-green2:#33392A;
     --color-bege: #aa9d7c;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
 body {
+  font-family: "Tektur", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  background-color: var(--color-bege);
 } 
 
 main{
